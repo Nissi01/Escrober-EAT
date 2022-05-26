@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        <link rel="stylesheet" href="static/outils.css" type="text/css">
+        <meta charset="UTF-8" >
+        <title>Escrober-Eat</title>
+    </head>
+    <body class="body2">
+    <a href="/Principal">
+		<img class="img2"  src="/static/EscroLogo.png">
+	</a>
+	
+    <a href="/PizzaHut">
+			<h2 class="impact">Retour au panier</h2>
+	</a>
+	{%for elem4 in Panier %}
+	<h2>- {{elem4[0]}}</h2>
+	{%endfor%}
+	<br>
+	
+    <h1>Le totale est de {{aa}} euros </h1>
+    
+    <a href="/Fin">
+    <button class="favorite styled"type="button">
+    Passer la commande
+	</button>
+	</a>
+
+</body>
+</html> 

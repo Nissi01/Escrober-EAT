@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        <link rel="stylesheet" href="static/outils.css" type="text/css">
+        <meta charset="UTF-8" >
+        <title>Escrober-Eat</title>
+    </head>
+    <body class="bodyPiz">
+	 <a href="/Principal">
+		<img class="img2"  src="/static/EscroLogo.png">
+	</a>
+	
+
+ 
+
+ <div class="neonO">	
+<h2 class="impactJ titre">Bienvenu chez Pizza Hut ! </h2>
+</div>	
+<div class="centre2">
+	<img class="img1" src="/static/AllPizzaHut/LogoMcdo.png">
+</div>	
+<form action="/PizzaHut" method="post">		
+
+    <button class="buttonR"  name="vide" >Vider le panier</button>
+	<input type="hidden" name="vide1" value="Vidage">
+</form>
+
+<details class="right">
+    <summary class="buttonG">Panier({{NbrPanier}})</summary>
+    {%for elem4 in Panier %}
+		<h3 class="impact1">{{elem4[0]}}</h3>
+		<br>
+		{%endfor%}
+</details>
+
+
+<br>
+<div class="centre2"><h1 class="impact">{{Message1}}</h1></div>
+
+
+<div class="right">
+	
+<a href="/ValiderPiz">
+	<button class="buttonV" class="right">Valider votre commande</button>
+</a>
+</div>
+
+<form method="post">
+<div class="centre2">	
+<select name="Entrée" class="buttonBLEU">
+    <option class="buttonBLEU">--Veillez choisir une Entrée--</option>
+    {%for elem in Entre %}
+    <option class="buttonBLEU" >{{elem[0]}}</option>
+    {%endfor%}
+</select>
+
+
+<select name="Pizza1" class="buttonBLEU">
+    <option class="buttonBLEU">--Veillez choisir votre Pizza n°1--</option>
+    {%for elem2 in Pizza%}
+    <option class="buttonBLEU" >{{elem2[0]}}</option>
+    {%endfor%}
+</select>
+
+<select name="Pizza2" class="buttonBLEU" >
+    <option class="buttonBLEU">--Veillez choisir votre Pizza n°2--</option>
+    {%for elem2 in Pizza%}
+    <option class="buttonBLEU">{{elem2[0]}}</option>
+    {%endfor%}
+</select>
+
+
+<select name="Boisson" class="buttonBLEU" >
+    <option class="buttonBLEU">--Veillez choisir votre Boisson--</option>
+    {%for elem2 in Boi%}
+    <option class="buttonBLEU">{{elem2[0]}}</option>
+    {%endfor%}
+</select>
+</div>	
+
+
+<button class="buttonJ" >Crée ton menu familial (25.99€)</button>
+</form>
+
+<h1 class="second" >Entrée (5.99€)</h1>
+
+{%for alone in Entre %}
+<fieldset class="eti3">
+<form action="/PizzaHut" method="post">	
+	  <h3 class="impact0">{{alone[0]}}</h3>
+	  <img class="img" src="/static/AllPizzaHut/imgPizzaHut/imgEntrées/{{alone[1]}}">
+      <button  name="solo" class="Dbutton" >Ajouter au panier</button>
+      <input type="hidden" name="bobo1" value="{{alone[0]}}">
+    
+</form>
+</fieldset>
+<br>
+{%endfor%}
+
+
+<h1 class="second">PIZZA (17.99€)</h1>
+
+<fieldset class="eti3">
+<form action="/PizzaHut" method="post">		
+	  <h3 class="impact0" >La Perso</h3>
+	  <img class="img" src="/static/AllPizzaHut/ImgPizzaHut/imgPizza/la-perso..jpg">
+	  <h1>Choisir la composition de la Pizza :</h1>
+	  <div class="centre2">
+	  <select name="Condiment1"  class="Dbutton">
+		{%for elem2 in condiment%}
+		<option class="buttonBLEU">{{elem2[0]}}</option>
+		{%endfor%}
+      </select>
+      
+      <select name="Condiment2"  class="Dbutton">
+		{%for elem2 in condiment%}
+		<option class="buttonBLEU">{{elem2[0]}}</option>
+		{%endfor%}
+      </select>
+      
+      <select name="Condiment3"  class="Dbutton">
+		{%for elem2 in condiment%}
+		<option class="buttonBLEU">{{elem2[0]}}</option>
+		{%endfor%}
+      </select>
+</div>
+<button  name="co" class="Dbutton">Ajouter au panier</button>
+</form>
+</fieldset>
+<br>
+
+{%for elem in Pizza%}
+<fieldset class="eti3">
+<form action="/PizzaHut" method="post">		
+		<h3 class="impact0" >{{elem[0]}}</h3>
+	  <img class="img" src="/static/AllPizzaHut/ImgPizzaHut/imgPizza/{{elem[1]}}">
+      <button  name="solo1" class="Dbutton">Ajouter au panier</button>
+	<input type="hidden" name="bobo" value="{{elem[0]}}">
+</form>
+</fieldset>
+<br>
+ {%endfor%}
+
+<h1 class="second" >BOISSON (4.99€)</h1>
+
+{%for alone3 in Boi %}
+<fieldset class="eti3">
+<form action="/PizzaHut" method="post">	
+	  <h3 class="impact0">{{alone3[0]}}</h3>
+	  <img class="img" src="/static/AllPizzaHut/imgPizzaHut/imgdeboisson/{{alone3[1]}}">
+      <button  name="solo2" class="Dbutton" >Ajouter au panier</button>
+      <input type="hidden" name="bobo2" value="{{alone3[0]}}">
+    
+</form>
+</fieldset>
+<br>
+{%endfor%}
+
+<h1 class="second" >SAUCE (0.70€)</h1>
+
+{%for alone1 in sauce %}
+<fieldset class="eti3">
+<form action="/PizzaHut" method="post">	
+	  <h3 class="impact0">{{alone1[0]}}</h3>
+	  <img class="img" src="/static/AllPizzaHut/imgPizzaHut/imgSauce/{{alone1[1]}}">
+      <button  name="solo3" class="Dbutton" >Ajouter au panier</button>
+      <input type="hidden" name="bobo3" value="{{alone1[0]}}">
+    
+</form>
+</fieldset>
+<br>
+{%endfor%}
+
+
+</body>
+</html> 

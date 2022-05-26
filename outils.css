@@ -1,0 +1,332 @@
+h2.titre{
+	text-align:center; font-style:italic; text-decoration:underline;font-size: 100px;
+	}
+.second{
+	text-align:center;
+    font-style:italic;
+    font-size: 400%;
+    font-family: fantasy;
+	color : rgb(255,255,255);
+	-webkit-text-stroke: 0.5px red;
+}
+p.centre1{
+	text-align:center;font-size: xxx-large;font-familly:Stencil Std
+	}
+p.centre2{
+	text-align:center;font-size: xxx-large;
+	}
+.cache{
+	visibility:hidden;
+	margin:70px
+	}
+
+.body1{
+	background-image:url("PageAcceil1.jpg");
+	background-color: transparent;
+	}
+.body2{
+	background-image:url("PageAcceil2.jpg");
+	background-color: transparent;
+	}
+bloc{
+	font-size:200%;
+	font-size:xxx-large;
+	font-size:
+	}
+.logo{
+	width:25%;
+	height:25%;
+	border: 2px solid black;
+	background-color: silver;
+	margin-left: 6%;
+	margin-right: 1%;
+	margin: 3%
+	
+	
+}
+	
+.choice{
+	border: 100px solid black;
+	border: solid;
+	}
+	
+.centre2{
+	text-align:center;
+	}
+p,
+label {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input {
+    margin: .4rem;
+}
+.drt{
+	text-align:right
+	}
+#otherValue
+{
+  display: none;
+}
+
+#other:checked ~ #otherValue
+{
+  display: inline-block;
+}
+.right{
+	text-align:right;
+	}
+.img{
+	width:10%;
+	}
+.img1{
+	width:30%;
+	}
+.img2{
+	width:19%;
+	}
+.bodyBK{
+	background-image:url("AllBurgerKing/Burger.jpg");
+	background-color: transparent;
+	
+	}
+.bodyMcdo{
+	background-image:url("AllMcdo/Burger.jpg");
+	background-color: transparent;
+}
+.bodyPiz{
+	background-image:url("AllPizzaHut/Burger.jpg");
+	background-color: transparent;	
+	}
+.eti{
+	background-image:url("white-background.jpg");
+	
+	}
+.eti3{
+	background-image:url("thumb-1920-97040.jpg");
+	
+	}	
+	
+.eti4{
+	background-image:url("AllPizzaHut/Burger.jpg");
+	background-color: transparent;	
+	}
+	
+.eti1{
+	background-image:url("audd.png");
+	
+	}
+.impact0{
+  font-size: xxx-large;
+  Font-family: Helvetica Neue;
+  color :#FF0000;
+  -webkit-text-stroke: 1px Black;
+}
+.impact{
+	font-size: x-large;
+  font-family: fantasy;
+  color : rgb(255,255,255);
+  -webkit-text-stroke: 0.5px red;
+}
+.impactJ{
+	font-size: x-large;
+  font-family: fantasy;
+  color : rgb(255,255,255);
+  -webkit-text-stroke: 0.5px yellow;
+}
+.impactO{
+	font-size: x-large;
+  font-family: fantasy;
+  color : rgb(255,255,255);
+  -webkit-text-stroke: 0.5px orannge;
+}
+.impact1{
+  font-family: fantasy;
+  color : #FFFF00;
+  -webkit-text-stroke: 0.5px red;
+}
+
+
+.buttonR {
+    background-color: #FF0000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-family: fantasy;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: x-large;
+    -webkit-text-stroke: 1px Black;
+}	
+
+.buttonV {
+    background-color: #9ACD32;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-family: fantasy;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: x-large;
+    -webkit-text-stroke: 1px Black;
+}	
+
+.buttonBLEU {
+    background-color: #4169E1;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-family: fantasy;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: x-large;
+    -webkit-text-stroke: 1px Black;
+}
+.buttonBLANC {
+    background-color: #FFFFFF;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-family: fantasy;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: x-large;
+    -webkit-text-stroke: 1px Black;
+}	
+
+.buttonJ {
+    background-color: #FFFF00;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-family: fantasy;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: x-large;
+    -webkit-text-stroke: 1px Black;
+}	
+.buttonG {
+    background-color: #C0C0C0;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-family: fantasy;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: x-large;
+    -webkit-text-stroke: 1px Black;
+}
+	
+.Dbutton {
+    background-color: #FFFAFA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-family: fantasy;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 0px;
+    font-size: x-large;
+    -webkit-text-stroke: 1px Black;
+}
+
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 0px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+    background-color: rgb(0, 255, 0);
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+.ulticentre{
+	 
+	 text-align:center;
+	 font-size: xxx-large;
+	 position: relative;
+	 top: 100px; 
+	
+	}
+ .box {
+        display: flex;
+        width: 75%;
+      }
+
+     
+.neonR {  
+      color: #fff;
+      text-shadow:  0 0 7px #fff, 
+               0 0 10px #fff, 
+               0 0 42px rgb(230, 18, 18),   
+               0 0 77px rgb(230, 18, 18), 
+               0 0 100px rgb(230, 18, 18) 
+ }
+     
+.neonJ {  
+      color: #fff;
+      text-shadow:  0 0 7px #fff, 
+               0 0 10px #fff, 
+               0 0 42px rgb(212, 230, 18),   
+               0 0 77px rgb(212, 230, 18), 
+               0 0 100px rgb(212, 230, 18) 
+ }
+.neonO {  
+      color: #fff;
+      text-shadow:  0 0 7px #fff, 
+               0 0 10px #fff, 
+               0 0 42px rgb(230, 131, 18),   
+               0 0 77px rgb(230, 131, 18), 
+               0 0 100px rgb(230, 131, 18) 
+ }
